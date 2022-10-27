@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <title>Rumus Volume Bola</title>
+</head>
+<body>
+    <b>Masukkan Jari-jari: </b><input type="number" id = "jarijari"><br>
+    <button type="button" onclick = "Vbola()">Hitung</button>
+    <h2>Hasil</h2>
+    <p id="hasil"></p>
+    <script>
+        var phi = 3.14159265359
+        function Vbola(){
+            jarijari = document.getElementById("jarijari").value;
+            let Volume = 4/3 * (jarijari**3) * phi;
+            document.getElementById("hasil").innerHTML = Volume; 
+        }
+    </script>
+
+
+</body>
+</html>
